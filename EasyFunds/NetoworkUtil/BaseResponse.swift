@@ -9,24 +9,24 @@ import Foundation
 
 struct BaseResponse<T: Decodable> : Decodable, CustomStringConvertible {
     
-    var data     : T?
-    let status   : Int
-    let message  : String?
+    let data     : T?
+    let message  : String
+    let statusCode   : Int
     
     enum CodingKeys : String, CodingKey {
-        case status = "status"
+        case statusCode = "statusCode"
         case message = "message"
-        case data
+        case data = "data"
     }
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        status = try container.decode(Int.self, forKey: .status)
-        message = try container.decodeIfPresent(String.self, forKey: .message)
+        statusCode = try container.decode(Int.self, forKey: .statusCode)
+        message = try container.decode(String.self, forKey: .message)
         data = try container.decodeIfPresent(T.self, forKey: .data)
     }
     
     var description: String {
-        return "{status: \(status), message: \(String(describing: message)), data: \(String(describing: data))}"
+        return "{status: \(statusCode), message: \(String(describing: message)), data: \(String(describing: data))}"
     }
 }

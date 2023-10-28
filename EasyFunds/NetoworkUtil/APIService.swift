@@ -18,33 +18,41 @@ struct APIService {
     }
     
     // 登录前首页
-    static func fetchHomeData() async throws -> UserInfo {
-        let userInfo : UserInfo = try await baseRequest(api: .unloginHome)
+    static func fetchHomeData() async throws -> UserInfo? {
+        let userInfo : UserInfo? = try await baseRequest(api: .unloginHome)
         return userInfo
     }
     
-    static func baseRequest<T: Decodable>(api: API) async throws -> T {
+    static func baseRequest<T: Decodable>(api: API) async throws -> T? {
         await withCheckedContinuation { continuation in
             netProvider.request(api) { result in
                 switch result {
-                case let .success(respons):
-                    guard var res = try? respons.mapJSON() as? [String : Any],
+                case let .success(response):
+                    
+                    guard var res = try? response.mapJSON() as? [String : Any],
                           let status = res["rrcexosultCode"] as? Int,
                           let message = res["rrcexosultMsg"] as? String else {
                         return
                     }
                     res.removeValue(forKey: "rrcexosultCode")
                     res.removeValue(forKey: "rrcexosultMsg")
-                    let newJson : [String : Any]  = ["status": status, "message" : message, "data" : res]
+                    let newJson  = ["statusCode": status, "message" : message, "data" : res]
                     
-                    guard let responseData =  try? JSONSerialization.data(withJSONObject: newJson)
-                          else {
+                    guard let responseData =  try? JSONSerialization.data(withJSONObject: newJson, options: .prettyPrinted) else {
                         return
                     }
-                    debugLog(newJson)
-                    let baseResponse = try? JSONSerialization.jsonObject(with: responseData)
-                    debugLog(baseResponse)
-//                    continuation.resume(returning: baseResponse!.data!)
+                    
+                    do {
+                        let baseResponse = try JSONDecoder().decode(BaseResponse<T>.self, from: responseData)
+                        if baseResponse.statusCode == -1 {
+                            // token 失效，发送通知
+                        }
+                        continuation.resume(returning: baseResponse.data)
+                    } catch  {
+                        debugLog(error)
+                    }
+                    
+                    
                 case let .failure(error):
                     debugLog("请求发生错误: \(error.localizedDescription)")
                 }
@@ -52,3 +60,5 @@ struct APIService {
         }
     }
 }
+
+
