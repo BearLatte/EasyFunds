@@ -18,7 +18,7 @@ struct IntroducationView: View {
                     Color.white
                     Image(introductions[index])
                         .resizable()
-                        .scaledToFill()
+                        .scaledToFit()
                         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                     
                     if index == introductions.count - 1 {

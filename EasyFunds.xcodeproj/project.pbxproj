@@ -33,6 +33,17 @@
 		22C16F312AEB9D3D00DBE28A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C16F302AEB9D3D00DBE28A /* Product.swift */; };
 		22C16F332AEBA37300DBE28A /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C16F322AEBA37300DBE28A /* UserInfo.swift */; };
 		22C16F372AEBD21700DBE28A /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C16F362AEBD21600DBE28A /* BaseResponse.swift */; };
+		22C16F392AEF4B5E00DBE28A /* APPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C16F382AEF4B5E00DBE28A /* APPError.swift */; };
+		22C16F3F2AEF5E3D00DBE28A /* ToastUI in Frameworks */ = {isa = PBXBuildFile; productRef = 22C16F3E2AEF5E3D00DBE28A /* ToastUI */; };
+		22C16F442AEF8C0900DBE28A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 22C16F432AEF8C0900DBE28A /* Kingfisher */; };
+		22C16F492AEF9AEB00DBE28A /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C16F482AEF9AEB00DBE28A /* ProductItemView.swift */; };
+		22C16F4B2AEF9C1000DBE28A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C16F4A2AEF9C1000DBE28A /* LoginView.swift */; };
+		22C16F4E2AEFA4C500DBE28A /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C16F4D2AEFA4C500DBE28A /* BackButton.swift */; };
+		22C16F502AEFB52500DBE28A /* PhoneInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C16F4F2AEFB52500DBE28A /* PhoneInputView.swift */; };
+		22C16F522AEFB57700DBE28A /* OTPCodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C16F512AEFB57700DBE28A /* OTPCodeInputView.swift */; };
+		22C16F542AEFB6C600DBE28A /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C16F532AEFB6C600DBE28A /* LogoView.swift */; };
+		22C16F562AEFBCA700DBE28A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C16F552AEFBCA700DBE28A /* LoginViewModel.swift */; };
+		22EAC3422AF0C96F00ADC700 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 22EAC3412AF0C96F00ADC700 /* SwiftUIX */; };
 		22EBEE0D2AD25035008F27DE /* EasyFundsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBEE0C2AD25035008F27DE /* EasyFundsApp.swift */; };
 		22EBEE112AD25038008F27DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22EBEE102AD25038008F27DE /* Assets.xcassets */; };
 		22EBEE142AD25038008F27DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22EBEE132AD25038008F27DE /* Preview Assets.xcassets */; };
@@ -61,6 +72,14 @@
 		22C16F302AEB9D3D00DBE28A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		22C16F322AEBA37300DBE28A /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		22C16F362AEBD21600DBE28A /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		22C16F382AEF4B5E00DBE28A /* APPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPError.swift; sourceTree = "<group>"; };
+		22C16F482AEF9AEB00DBE28A /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
+		22C16F4A2AEF9C1000DBE28A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		22C16F4D2AEFA4C500DBE28A /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		22C16F4F2AEFB52500DBE28A /* PhoneInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInputView.swift; sourceTree = "<group>"; };
+		22C16F512AEFB57700DBE28A /* OTPCodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPCodeInputView.swift; sourceTree = "<group>"; };
+		22C16F532AEFB6C600DBE28A /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		22C16F552AEFBCA700DBE28A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		22EBEE092AD25035008F27DE /* EasyFunds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyFunds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EBEE0C2AD25035008F27DE /* EasyFundsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyFundsApp.swift; sourceTree = "<group>"; };
 		22EBEE102AD25038008F27DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,9 +92,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22EAC3422AF0C96F00ADC700 /* SwiftUIX in Frameworks */,
+				22C16F442AEF8C0900DBE28A /* Kingfisher in Frameworks */,
 				22C16F1D2AEA491800DBE28A /* Moya in Frameworks */,
 				22C16F1B2AEA491800DBE28A /* CombineMoya in Frameworks */,
 				22C16F212AEA491800DBE28A /* RxMoya in Frameworks */,
+				22C16F3F2AEF5E3D00DBE28A /* ToastUI in Frameworks */,
 				22C16F1F2AEA491800DBE28A /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +108,7 @@
 		220A1B3C2AE8FC3F002FEFA2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				22C16F452AEF9A9000DBE28A /* Login */,
 				22C16F0C2AEA1E1200DBE28A /* Root */,
 				220A1B592AE91055002FEFA2 /* Introduction */,
 				220A1B472AE90405002FEFA2 /* Profile */,
@@ -137,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				220A1B4F2AE9046F002FEFA2 /* HomeView.swift */,
+				22C16F482AEF9AEB00DBE28A /* ProductItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,8 +228,8 @@
 		22C16F0C2AEA1E1200DBE28A /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				22C16F0E2AEA1E2000DBE28A /* ViewModel */,
 				22C16F0D2AEA1E1700DBE28A /* Views */,
+				22C16F0E2AEA1E2000DBE28A /* ViewModel */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -249,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				22C16F272AEA4E2700DBE28A /* Global.swift */,
+				22C16F382AEF4B5E00DBE28A /* APPError.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -260,6 +285,42 @@
 				22C16F322AEBA37300DBE28A /* UserInfo.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		22C16F452AEF9A9000DBE28A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				22C16F462AEF9A9500DBE28A /* View */,
+				22C16F472AEF9AA700DBE28A /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		22C16F462AEF9A9500DBE28A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22C16F4A2AEF9C1000DBE28A /* LoginView.swift */,
+				22C16F532AEFB6C600DBE28A /* LogoView.swift */,
+				22C16F4F2AEFB52500DBE28A /* PhoneInputView.swift */,
+				22C16F512AEFB57700DBE28A /* OTPCodeInputView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22C16F472AEF9AA700DBE28A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				22C16F552AEFBCA700DBE28A /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		22C16F4C2AEFA48300DBE28A /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				22C16F4D2AEFA4C500DBE28A /* BackButton.swift */,
+			);
+			path = Widget;
 			sourceTree = "<group>";
 		};
 		22EBEE002AD25035008F27DE = {
@@ -284,6 +345,7 @@
 				220A1B412AE8FD92002FEFA2 /* App */,
 				220A1B3C2AE8FC3F002FEFA2 /* Core */,
 				22C16F262AEA4E0800DBE28A /* Utils */,
+				22C16F4C2AEFA48300DBE28A /* Widget */,
 				220A1B542AE90A21002FEFA2 /* Extensions */,
 				220A1B402AE8FD5A002FEFA2 /* Resources */,
 				22C16F142AEA3E5F00DBE28A /* NetoworkUtil */,
@@ -321,6 +383,9 @@
 				22C16F1C2AEA491800DBE28A /* Moya */,
 				22C16F1E2AEA491800DBE28A /* ReactiveMoya */,
 				22C16F202AEA491800DBE28A /* RxMoya */,
+				22C16F3E2AEF5E3D00DBE28A /* ToastUI */,
+				22C16F432AEF8C0900DBE28A /* Kingfisher */,
+				22EAC3412AF0C96F00ADC700 /* SwiftUIX */,
 			);
 			productName = EasyFunds;
 			productReference = 22EBEE092AD25035008F27DE /* EasyFunds.app */;
@@ -352,6 +417,9 @@
 			mainGroup = 22EBEE002AD25035008F27DE;
 			packageReferences = (
 				22C16F192AEA491800DBE28A /* XCRemoteSwiftPackageReference "Moya" */,
+				22C16F3D2AEF5E3D00DBE28A /* XCRemoteSwiftPackageReference "ToastUI" */,
+				22C16F422AEF8C0900DBE28A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				22EAC3402AF0C96F00ADC700 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
 			);
 			productRefGroup = 22EBEE0A2AD25035008F27DE /* Products */;
 			projectDirPath = "";
@@ -382,25 +450,33 @@
 			files = (
 				220A1B5B2AE910F1002FEFA2 /* IntroducationView.swift in Sources */,
 				22C16F0B2AEA1DFD00DBE28A /* ContentView.swift in Sources */,
+				22C16F392AEF4B5E00DBE28A /* APPError.swift in Sources */,
+				22C16F492AEF9AEB00DBE28A /* ProductItemView.swift in Sources */,
 				220A1B4A2AE9041D002FEFA2 /* ProfileView.swift in Sources */,
 				22C16F2C2AEA663C00DBE28A /* String+Extension.swift in Sources */,
 				220A1B502AE9046F002FEFA2 /* HomeView.swift in Sources */,
 				220A1B5F2AEA0770002FEFA2 /* Log+Extension.swift in Sources */,
+				22C16F562AEFBCA700DBE28A /* LoginViewModel.swift in Sources */,
 				22C16F2E2AEB549700DBE28A /* APIService.swift in Sources */,
 				22EBEE0D2AD25035008F27DE /* EasyFundsApp.swift in Sources */,
+				22C16F522AEFB57700DBE28A /* OTPCodeInputView.swift in Sources */,
 				220A1B3F2AE8FC79002FEFA2 /* MainTabView.swift in Sources */,
 				22C16F372AEBD21700DBE28A /* BaseResponse.swift in Sources */,
 				220A1B4C2AE90442002FEFA2 /* PrivacyView.swift in Sources */,
+				22C16F4B2AEF9C1000DBE28A /* LoginView.swift in Sources */,
 				22C16F232AEA4A1500DBE28A /* APIClient.swift in Sources */,
 				22C16F132AEA3B1500DBE28A /* HomeViewModel.swift in Sources */,
 				22C16F252AEA4B9400DBE28A /* Plugins.swift in Sources */,
+				22C16F542AEFB6C600DBE28A /* LogoView.swift in Sources */,
 				22C16F102AEA1E3A00DBE28A /* ContentViewModel.swift in Sources */,
+				22C16F502AEFB52500DBE28A /* PhoneInputView.swift in Sources */,
 				220A1B4E2AE90459002FEFA2 /* FeedbackView.swift in Sources */,
 				22C16F2A2AEA5E8A00DBE28A /* UIDevice+Extension.swift in Sources */,
 				220A1B582AE90EA3002FEFA2 /* UserDefaults+Extension.swift in Sources */,
 				220A1B562AE90A5B002FEFA2 /* Color+Extension.swift in Sources */,
 				22C16F282AEA4E2700DBE28A /* Global.swift in Sources */,
 				22C16F332AEBA37300DBE28A /* UserInfo.swift in Sources */,
+				22C16F4E2AEFA4C500DBE28A /* BackButton.swift in Sources */,
 				22C16F312AEB9D3D00DBE28A /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,6 +703,30 @@
 				minimumVersion = 15.0.3;
 			};
 		};
+		22C16F3D2AEF5E3D00DBE28A /* XCRemoteSwiftPackageReference "ToastUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/quanshousio/ToastUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.1;
+			};
+		};
+		22C16F422AEF8C0900DBE28A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.0;
+			};
+		};
+		22EAC3402AF0C96F00ADC700 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.8;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -649,6 +749,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 22C16F192AEA491800DBE28A /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
+		};
+		22C16F3E2AEF5E3D00DBE28A /* ToastUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22C16F3D2AEF5E3D00DBE28A /* XCRemoteSwiftPackageReference "ToastUI" */;
+			productName = ToastUI;
+		};
+		22C16F432AEF8C0900DBE28A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22C16F422AEF8C0900DBE28A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		22EAC3412AF0C96F00ADC700 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22EAC3402AF0C96F00ADC700 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

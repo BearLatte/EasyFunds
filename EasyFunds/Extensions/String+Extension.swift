@@ -51,4 +51,11 @@ extension String {
         }
         return paramsStr
     }
+    
+    
+    static func randomScore() -> String {
+        let allScores = ["4.8", "4.9", "5.0"]
+        let index =  Int(arc4random()) % allScores.count
+        return allScores[index]
+    }
 }

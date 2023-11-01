@@ -24,7 +24,8 @@ struct APIService {
     }
     
     static func baseRequest<T: Decodable>(api: API) async throws -> T? {
-        await withCheckedContinuation { continuation in
+         
+       try await withCheckedThrowingContinuation { continuation in
             netProvider.request(api) { result in
                 switch result {
                 case let .success(response):
@@ -45,14 +46,15 @@ struct APIService {
                     do {
                         let baseResponse = try JSONDecoder().decode(BaseResponse<T>.self, from: responseData)
                         if baseResponse.statusCode == -1 {
-                            // token 失效，发送通知
+                            NotificationCenter.default.post(name: Global.tokenExpiresNotificationName, object: nil)
+                        }
+                        if baseResponse.statusCode == 0 {
+                            continuation.resume(throwing: APPError(baseResponse.message))
                         }
                         continuation.resume(returning: baseResponse.data)
                     } catch  {
-                        debugLog(error)
+                        continuation.resume(throwing: error)
                     }
-                    
-                    
                 case let .failure(error):
                     debugLog("请求发生错误: \(error.localizedDescription)")
                 }

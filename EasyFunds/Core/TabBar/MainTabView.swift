@@ -54,6 +54,10 @@ struct MainTabView: View {
         .accentColor(tabItemSelectedColor)
         .background(.white)
         .onAppear{ Global.requestAdvertisingIdentifier() }
+        .onReceive(NotificationCenter.default.publisher(for: Global.tokenExpiresNotificationName), perform: { _ in
+            contentViewModel.isShowLoginView = true
+        })
+    
     }
     
     private let tabItemNormalColor = Color(hex: "#C2D0C8")

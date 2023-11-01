@@ -9,6 +9,7 @@ import Foundation
 
 class ContentViewModel : ObservableObject {
     @Published var isFirstLaunch : Bool = UserDefaults.isFirstLaunchOfNewVersion
+    @Published var isShowLoginView : Bool = false
     @Published var isVerified : Bool = false
     
     init()  {

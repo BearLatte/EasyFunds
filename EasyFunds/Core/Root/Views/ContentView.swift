@@ -6,17 +6,19 @@
 //
 
 import SwiftUI
+import ToastUI
 
 struct ContentView: View {
     @StateObject var viewModel : ContentViewModel = ContentViewModel()
     
     var body: some View {
-        Group {
-            if viewModel.isFirstLaunch {
-                IntroducationView().environmentObject(viewModel)
-            } else {
-                MainTabView().environmentObject(viewModel)
-            }
+        if viewModel.isFirstLaunch {
+            IntroducationView().environmentObject(viewModel)
+        } else {
+            MainTabView().environmentObject(viewModel)
+                .fullScreenCover(isPresented: $viewModel.isShowLoginView) {
+                    LoginView().environmentObject(viewModel)
+                }
         }
     }
 }
